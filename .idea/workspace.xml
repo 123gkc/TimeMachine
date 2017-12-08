@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec639114-eace-44fc-adb1-0413e2d07716" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Queries/NullQuery.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Queries/Query.class" afterPath="$PROJECT_DIR$/target/classes/Queries/Query.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TestMain.class" afterPath="$PROJECT_DIR$/target/classes/TestMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Beans/FinancialsReportBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$1.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$2.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$3.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$4.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$5.class" afterPath="$PROJECT_DIR$/target/classes/Utils/MiscellaneousFunctions$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mains/DataSerializeFromNetMain.java" afterPath="$PROJECT_DIR$/src/main/java/Mains/DataSerializeFromNetMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Queries/DebtSafeQuery.java" afterPath="$PROJECT_DIR$/src/main/java/Queries/DebtSafeQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java" afterPath="$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Queries/Query.java" afterPath="$PROJECT_DIR$/src/main/java/Queries/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TestMain.java" afterPath="$PROJECT_DIR$/src/main/java/TestMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java" afterPath="$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,31 +40,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotNullQuery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="390">
+              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MiscellaneousFunctions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="162" column="63" lean-forward="false" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#500#651#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#3303#3334#0" expanded="true" />
+                <element signature="e#3382#3388#0" expanded="true" />
+                <element signature="e#6720#6729#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebtSafeQuery.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AllDataBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AllDataBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetsBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AssetsBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BalanceSheetBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DebtSafeQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Queries/DebtSafeQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="390">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,46 +124,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BalanceSheetBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java">
+      <file leaf-file-name="NotNullQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="150">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiscellaneousFunctions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java">
+      <file leaf-file-name="TimeMachine.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TimeMachine.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="244" column="26" lean-forward="true" selection-start-line="244" selection-start-column="26" selection-end-line="244" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4795#4826#0" expanded="true" />
-                <element signature="e#4874#4880#0" expanded="true" />
-                <element signature="e#8212#8221#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#467#485#0" expanded="true" />
-                <element signature="e#556#572#0" expanded="true" />
-                <element signature="e#649#668#0" expanded="true" />
-                <element signature="e#751#773#0" expanded="true" />
-                <element signature="e#842#857#0" expanded="true" />
-                <element signature="e#5279#5280#0" expanded="true" />
-                <element signature="e#5313#5314#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,8 +150,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -147,6 +165,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ExtendBeans" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -172,21 +195,16 @@
         <option value="$PROJECT_DIR$/src/main/java/DataExtraction/MetaDataExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataExtraction/QuarterlyResultsExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/AssetsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/EquityBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/ExpensesBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/IncomeBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/LiabilitiesBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/LiquidityRatiosBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/PAndLOthersBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/PerShareRatiosBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/PledgedSharesBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/ProfitabilityRatiosBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/QuarterlyExpensesBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/TaxesAndExceptionsBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Beans/ValuationRatiosBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Constants.java" />
@@ -200,11 +218,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Queries/NullQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/BeansConsiderationSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Queries/Query.java" />
         <option value="$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Queries/DebtSafeQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/FinancialsReportBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java" />
       </list>
     </option>
   </component>
@@ -273,7 +297,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Processors" type="462c0819:PsiDirectoryNode" />
+              <item name="Beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TimeMachine" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +331,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="FRB&#9;FILE&#9;file:///Users/krishna.go/myProjects/TimeMachine/src/main/java/Beans/FinancialsReportBean.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -566,6 +591,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ec639114-eace-44fc-adb1-0413e2d07716" name="Default" comment="" />
@@ -574,7 +602,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511783652636</updated>
       <workItem from="1512028724606" duration="352000" />
-      <workItem from="1512032977941" duration="83771000" />
+      <workItem from="1512032977941" duration="91361000" />
     </task>
     <task id="LOCAL-00001" summary="Adding all the files of TimeMachine. &#10;The module to crawl moneycontrol website and serialize the companyBeanObjects is functional.">
       <created>1512655578046</created>
@@ -583,14 +611,22 @@
       <option name="project" value="LOCAL" />
       <updated>1512655578046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Saving some changes before opening a new branch.">
+      <created>1512714783247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512714783247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84123000" />
+    <option name="totallyTimeSpent" value="91713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -605,7 +641,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24880952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24880952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -631,7 +667,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding all the files of TimeMachine. &#10;The module to crawl moneycontrol website and serialize the companyBeanObjects is functional." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding all the files of TimeMachine. &#10;The module to crawl moneycontrol website and serialize the companyBeanObjects is functional." />
+    <MESSAGE value="Saving some changes before opening a new branch." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving some changes before opening a new branch." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,39 +681,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Processors/HtmlGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#467#485#0" expanded="true" />
-            <element signature="e#556#572#0" expanded="true" />
-            <element signature="e#649#668#0" expanded="true" />
-            <element signature="e#751#773#0" expanded="true" />
-            <element signature="e#842#857#0" expanded="true" />
-            <element signature="e#5279#5280#0" expanded="true" />
-            <element signature="e#5313#5314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="28" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Beans.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/org/jsoup/select/Elements.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -686,14 +690,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HtmlProccessing/SubsequentHtmlsGetter.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Beans/SheetBeanInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -834,28 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding>
-            <marker date="1512466506000" expanded="true" signature="23:67" ph="..." />
-            <marker date="1512466506000" expanded="true" signature="570:833" ph="{...}" />
-            <marker date="1512466506000" expanded="false" signature="860:871" ph=" { " />
-            <marker date="1512466506000" expanded="false" signature="883:889" ph=" }" />
-            <marker date="1512466506000" expanded="false" signature="944:955" ph=" { " />
-            <marker date="1512466506000" expanded="false" signature="981:987" ph=" }" />
-            <marker date="1512466506000" expanded="false" signature="1052:1063" ph=" { " />
-            <marker date="1512466506000" expanded="false" signature="1094:1100" ph=" }" />
-            <marker date="1512466506000" expanded="false" signature="1157:1168" ph=" { " />
-            <marker date="1512466506000" expanded="false" signature="1195:1201" ph=" }" />
-            <marker date="1512466506000" expanded="false" signature="1258:1269" ph=" { " />
-            <marker date="1512466506000" expanded="false" signature="1296:1302" ph=" }" />
-            <marker date="1512466506000" expanded="true" signature="1347:1651" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Beans/LiabilitiesBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -949,16 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Beans/ProfitabilityRatiosBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -979,14 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/QuarterlyExpensesBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1026,41 +982,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AllDataBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,22 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AssetsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1125,15 +1035,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CashFlowSheetBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="244" column="26" lean-forward="true" selection-start-line="244" selection-start-column="26" selection-end-line="244" selection-end-column="26" />
+        <state relative-caret-position="285">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/KeyRatiosBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4795#4826#0" expanded="true" />
-            <element signature="e#4874#4880#0" expanded="true" />
-            <element signature="e#8212#8221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/QuarterlyExpensesBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/QuarterlyResultsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/PAndLSheetBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5577">
+          <caret line="473" column="11" lean-forward="false" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
+          <folding>
+            <element signature="e#19296#19297#0" expanded="false" />
+            <element signature="e#19379#19380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="134" column="81" lean-forward="true" selection-start-line="134" selection-start-column="81" selection-end-line="134" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#485#0" expanded="true" />
+            <element signature="e#556#572#0" expanded="true" />
+            <element signature="e#649#668#0" expanded="true" />
+            <element signature="e#751#773#0" expanded="true" />
+            <element signature="e#842#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AllDataBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/AssetsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TimeMachine.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/FinancialsReportBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,6 +1159,21 @@
           <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MiscellaneousFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="162" column="63" lean-forward="false" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#651#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#3303#3334#0" expanded="true" />
+            <element signature="e#3382#3388#0" expanded="true" />
+            <element signature="e#6720#6729#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1161,44 +1191,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Queries/NotNullQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/CompanyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#467#485#0" expanded="true" />
-            <element signature="e#556#572#0" expanded="true" />
-            <element signature="e#649#668#0" expanded="true" />
-            <element signature="e#751#773#0" expanded="true" />
-            <element signature="e#842#857#0" expanded="true" />
-            <element signature="e#5279#5280#0" expanded="true" />
-            <element signature="e#5313#5314#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Queries/DebtSafeQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="390">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Beans/BalanceSheetBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

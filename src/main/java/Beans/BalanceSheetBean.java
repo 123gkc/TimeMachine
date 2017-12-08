@@ -6,8 +6,7 @@ import java.util.Date;
 /**
  * Created by krishna.go on 28/11/17.
  */
-public class BalanceSheetBean implements Serializable{
-    private Date date;
+public class BalanceSheetBean extends FinancialsReportBean implements Serializable {
     private EquityBean equityBean;
     private LiabilitiesBean liabilitiesBean;
     private AssetsBean assetsBean;
@@ -17,10 +16,6 @@ public class BalanceSheetBean implements Serializable{
         this.equityBean = equityBean;
         this.liabilitiesBean = liabilitiesBean;
         this.assetsBean = assetsBean;
-    }
-
-    public Date getDate(){
-        return date;
     }
 
     public EquityBean getEquityBean() {

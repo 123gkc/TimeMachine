@@ -3,8 +3,7 @@ package Beans;
 import java.io.Serializable;
 import java.util.Date;
 
-public class KeyRatiosBean implements Serializable {
-    private Date date;
+public class KeyRatiosBean extends FinancialsReportBean implements Serializable {
     private PerShareRatiosBean perShareRatiosBean;
     private ProfitabilityRatiosBean profitabilityRatiosBean;
     private LiquidityRatiosBean liquidityRatiosBean;
@@ -16,10 +15,6 @@ public class KeyRatiosBean implements Serializable {
         this.profitabilityRatiosBean = profitabilityRatiosBean;
         this.liquidityRatiosBean = liquidityRatiosBean;
         this.valuationRatiosBean = valuationRatiosBean;
-    }
-
-    public Date getDate() {
-        return date;
     }
 
     public PerShareRatiosBean getPerShareRatiosBean() {

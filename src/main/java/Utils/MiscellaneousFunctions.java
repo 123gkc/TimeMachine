@@ -1,8 +1,6 @@
 package Utils;
 
 import Beans.*;
-import DataExtraction.KeyRatiosExtractor;
-import DataExtraction.QuarterlyResultsExtractor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -14,41 +12,10 @@ import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 public class MiscellaneousFunctions {
-    public static void sortBalanceSheetListByDate(List<BalanceSheetBean> balanceSheetBeanList){
-        Collections.sort(balanceSheetBeanList, new Comparator<BalanceSheetBean>() {
-            public int compare(BalanceSheetBean o1, BalanceSheetBean o2) {
-                return o1.getDate().compareTo(o2.getDate());
-            }
-        });
-    }
 
-    public static void sortPAndLSheetListByDate(List<PAndLSheetBean> pAndLSheetBeanList){
-        Collections.sort(pAndLSheetBeanList, new Comparator<PAndLSheetBean>() {
-            public int compare(PAndLSheetBean o1, PAndLSheetBean o2) {
-                return o1.getDate().compareTo(o2.getDate());
-            }
-        });
-    }
-
-    public static void sortCashFlowSheetListByDate(List<CashFlowSheetBean> cashFlowSheetBeanList){
-        Collections.sort(cashFlowSheetBeanList, new Comparator<CashFlowSheetBean>() {
-            public int compare(CashFlowSheetBean o1, CashFlowSheetBean o2) {
-                return o1.getDate().compareTo(o2.getDate());
-            }
-        });
-    }
-
-    public static void sortQuarterlyResultsByDate(List<QuarterlyResultsBean> quarterlyResultsBeanList){
-        Collections.sort(quarterlyResultsBeanList, new Comparator<QuarterlyResultsBean>() {
-            public int compare(QuarterlyResultsBean o1, QuarterlyResultsBean o2) {
-                return o1.getDate().compareTo(o2.getDate());
-            }
-        });
-    }
-
-    public static void sortKeyRatiosByDate(List<KeyRatiosBean> keyRatiosBeanList){
-        Collections.sort(keyRatiosBeanList,new Comparator<KeyRatiosBean>() {
-            public int compare(KeyRatiosBean o1, KeyRatiosBean o2) {
+    public static <T extends FinancialsReportBean> void sortFinancialsReportListByDate(List<T> financialsReportBeanList){
+        Collections.sort(financialsReportBeanList, new Comparator<T>() {
+            public int compare(T o1, T o2) {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
@@ -194,9 +161,8 @@ public class MiscellaneousFunctions {
         Integer numberOfYearsOfDataAvailable = 0;
         if(consideringBeansMode==0){
             ArrayList<Integer> list = new ArrayList<Integer>();
-            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,1));
-            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,2));
-            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,3));
+            for(int i = 1; i < 6; i++)
+                list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,i));
             Integer min = list.get(0);
             for(Integer current : list)
                 if(current < min)
@@ -206,33 +172,21 @@ public class MiscellaneousFunctions {
         }
         if(consideringBeansMode==1){
             List<BalanceSheetBean> balanceSheetBeanList = companyBean.getBalanceSheetBeanList();
-            if(balanceSheetBeanList.size() == 0 || balanceSheetBeanList.get(0).getDate().after(fromDate))
-                return -1;
-            Date lastBeanDate = balanceSheetBeanList.get(0).getDate();
-            for(int i = 1; i < balanceSheetBeanList.size();i++){
-                BalanceSheetBean balanceSheetBean = balanceSheetBeanList.get(i);
-                if(!areOneYearApart(balanceSheetBean.getDate(),lastBeanDate))
-                    lastBeanDate = balanceSheetBean.getDate();
-                if(balanceSheetBean.getDate().after(fromDate))
-                    break;
-                numberOfYearsOfDataAvailable++;
-            }
+            numberOfYearsOfDataAvailable = getNumberOfYearsOfDataAvailableHelper(fromDate, balanceSheetBeanList);
         }
         if(consideringBeansMode==2){
-            List<KeyRatiosBean> keyRatiosBeanList = companyBean.getKeyRatiosBeanList();
-            if(keyRatiosBeanList.size() == 0 || keyRatiosBeanList.get(0).getDate().after(fromDate))
-                return -1;
-            Date lastBeanDate = keyRatiosBeanList.get(0).getDate();
-            for(int i = 1; i < keyRatiosBeanList.size();i++){
-                KeyRatiosBean keyRatiosBean = keyRatiosBeanList.get(i);
-                if(!areOneYearApart(keyRatiosBean.getDate(),lastBeanDate))
-                    lastBeanDate = keyRatiosBean.getDate();
-                if(keyRatiosBean.getDate().after(fromDate))
-                    break;
-                numberOfYearsOfDataAvailable++;
-            }
+            List<CashFlowSheetBean> cashFlowSheetBeanList = companyBean.getCashFlowSheetBeanList();
+            numberOfYearsOfDataAvailable = getNumberOfYearsOfDataAvailableHelper(fromDate, cashFlowSheetBeanList);
         }
         if(consideringBeansMode==3){
+            List<PAndLSheetBean> pAndLSheetBeanList = companyBean.getPAndLSheetBeanList();
+            numberOfYearsOfDataAvailable = getNumberOfYearsOfDataAvailableHelper(fromDate, pAndLSheetBeanList);
+        }
+        if(consideringBeansMode==4){
+            List<KeyRatiosBean> keyRatiosBeanList = companyBean.getKeyRatiosBeanList();
+            numberOfYearsOfDataAvailable = getNumberOfYearsOfDataAvailableHelper(fromDate, keyRatiosBeanList);
+        }
+        if(consideringBeansMode==5){
             List<QuarterlyResultsBean> quarterlyResultsBeanList = companyBean.getQuarterlyResultsBeanList();
             if(quarterlyResultsBeanList.size() == 0 || quarterlyResultsBeanList.get(0).getDate().after(fromDate))
                 return -1;
@@ -247,6 +201,22 @@ public class MiscellaneousFunctions {
             }
         }
         return numberOfYearsOfDataAvailable+1;
+    }
+
+    private static <T extends FinancialsReportBean> Integer getNumberOfYearsOfDataAvailableHelper(Date fromDate, List<T> financialsReportBeanList){
+        Integer numberOfYearsOfDataAvailable = 0;
+        if(financialsReportBeanList.size() == 0 || financialsReportBeanList.get(0).getDate().after(fromDate))
+            return -2;
+        Date lastBeanDate = financialsReportBeanList.get(0).getDate();
+        for(int i = 1; i< financialsReportBeanList.size(); i++){
+            FinancialsReportBean financialsReportBean = financialsReportBeanList.get(i);
+            if(!areOneYearApart(financialsReportBean.getDate(), lastBeanDate))
+                lastBeanDate = financialsReportBean.getDate();
+            if(financialsReportBean.getDate().after(fromDate))
+                break;
+            numberOfYearsOfDataAvailable++;
+        }
+        return numberOfYearsOfDataAvailable;
     }
 
     public static boolean areOneYearApart(Date date1, Date date2){

@@ -3,8 +3,7 @@ package Beans;
 import java.io.Serializable;
 import java.util.Date;
 
-public class PAndLSheetBean implements Serializable {
-    private Date date;
+public class PAndLSheetBean extends FinancialsReportBean implements Serializable {
     private IncomeBean incomeBean;
     private ExpensesBean expensesBean;
     private TaxesAndExceptionsBean taxesAndExceptionsBean;
@@ -16,10 +15,6 @@ public class PAndLSheetBean implements Serializable {
         this.expensesBean = expensesBean;
         this.taxesAndExceptionsBean = taxesAndExceptionsBean;
         this.pAndLOthersBean = pAndLOthersBean;
-    }
-
-    public Date getDate() {
-        return date;
     }
 
     public IncomeBean getIncomeBean() {

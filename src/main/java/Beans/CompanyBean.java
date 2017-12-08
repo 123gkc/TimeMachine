@@ -128,11 +128,11 @@ public class CompanyBean implements Serializable {
     public List<KeyRatiosBean> getKeyRatiosBeanList() { return keyRatiosBeanList; }
 
     public void sortAllListsByDate(){
-        MiscellaneousFunctions.sortBalanceSheetListByDate(balanceSheetBeanList);
-        MiscellaneousFunctions.sortPAndLSheetListByDate(pAndLSheetBeanList);
-        MiscellaneousFunctions.sortCashFlowSheetListByDate(cashFlowSheetBeanList);
-        MiscellaneousFunctions.sortQuarterlyResultsByDate(quarterlyResultsBeanList);
-        MiscellaneousFunctions.sortKeyRatiosByDate(keyRatiosBeanList);
+        MiscellaneousFunctions.sortFinancialsReportListByDate(balanceSheetBeanList);
+        MiscellaneousFunctions.sortFinancialsReportListByDate(pAndLSheetBeanList);
+        MiscellaneousFunctions.sortFinancialsReportListByDate(cashFlowSheetBeanList);
+        MiscellaneousFunctions.sortFinancialsReportListByDate(quarterlyResultsBeanList);
+        MiscellaneousFunctions.sortFinancialsReportListByDate(keyRatiosBeanList);
     }
 
     @Override

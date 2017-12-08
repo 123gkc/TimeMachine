@@ -3,8 +3,7 @@ package Beans;
 import java.io.Serializable;
 import java.util.Date;
 
-public class CashFlowSheetBean implements Serializable {
-    private Date date;
+public class CashFlowSheetBean extends FinancialsReportBean implements Serializable {
     private Double PAndLBeforeTax;
     private Double cashFromOperating;
     private Double cashUsedInInvesting;
@@ -18,10 +17,6 @@ public class CashFlowSheetBean implements Serializable {
         this.cashUsedInInvesting = cashUsedInInvesting;
         this.cashUsedFromFinancing = cashUsedFromFinancing;
         this.cashAtYearEnd = cashAtYearEnd;
-    }
-
-    public Date getDate() {
-        return date;
     }
 
     public Double getPAndLBeforeTax() {
