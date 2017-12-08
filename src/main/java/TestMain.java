@@ -1,4 +1,8 @@
+import Beans.AllDataBean;
+import Beans.CompanyBean;
 import Queries.NotNullQuery;
+
+import java.util.Date;
 
 
 /**
@@ -6,7 +10,12 @@ import Queries.NotNullQuery;
  */
 public class TestMain {
     public static void main(String[] args) throws Exception{
-        System.out.println(new NotNullQuery().getQueryOutput());
+        NotNullQuery notNullQuery = new NotNullQuery(new Date());
+        Integer count = 0;
+        for(Integer i : notNullQuery.getQueryOutput())
+            count+=i;
+        System.out.println(count);
+
         /*long startTime = System.currentTimeMillis();
         HashMap<String, String> urlMap = new HashMap<String, String>();
         urlMap.put("balanceSheet","http://www.moneycontrol.com/financials/acesoftware/balance-sheetVI/AS23");

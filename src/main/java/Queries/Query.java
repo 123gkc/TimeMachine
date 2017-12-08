@@ -2,13 +2,14 @@ package Queries;
 
 import Beans.AllDataBean;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public abstract class Query {
     AllDataBean allDataBean = AllDataBean.getInstance();
-    List<Integer> queryOutput;
-    Boolean isExecuted;
+    List<Integer> queryOutput = new ArrayList<Integer>();
+    Boolean isExecuted = false;
     Date queryDate = new Date();
 
     public final List<Integer> getQueryOutput() {

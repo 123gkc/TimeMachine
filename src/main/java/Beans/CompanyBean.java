@@ -93,7 +93,7 @@ public class CompanyBean implements Serializable {
         sortAllListsByDate();
     }
 
-    public String getCompnayName() {
+    public String getCompanyName() {
         return compnayName;
     }
 

@@ -2,6 +2,7 @@ package Utils;
 
 import Beans.*;
 import DataExtraction.KeyRatiosExtractor;
+import DataExtraction.QuarterlyResultsExtractor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -189,4 +190,76 @@ public class MiscellaneousFunctions {
         return currentRow;
     }
 
+    public static Integer getNumberOfYearsOfDataAvailable(Date fromDate, CompanyBean companyBean, Integer consideringBeansMode){
+        Integer numberOfYearsOfDataAvailable = 0;
+        if(consideringBeansMode==0){
+            ArrayList<Integer> list = new ArrayList<Integer>();
+            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,1));
+            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,2));
+            list.add(getNumberOfYearsOfDataAvailable(fromDate, companyBean,3));
+            Integer min = list.get(0);
+            for(Integer current : list)
+                if(current < min)
+                    min = current;
+            return min;
+
+        }
+        if(consideringBeansMode==1){
+            List<BalanceSheetBean> balanceSheetBeanList = companyBean.getBalanceSheetBeanList();
+            if(balanceSheetBeanList.size() == 0 || balanceSheetBeanList.get(0).getDate().after(fromDate))
+                return -1;
+            Date lastBeanDate = balanceSheetBeanList.get(0).getDate();
+            for(int i = 1; i < balanceSheetBeanList.size();i++){
+                BalanceSheetBean balanceSheetBean = balanceSheetBeanList.get(i);
+                if(!areOneYearApart(balanceSheetBean.getDate(),lastBeanDate))
+                    lastBeanDate = balanceSheetBean.getDate();
+                if(balanceSheetBean.getDate().after(fromDate))
+                    break;
+                numberOfYearsOfDataAvailable++;
+            }
+        }
+        if(consideringBeansMode==2){
+            List<KeyRatiosBean> keyRatiosBeanList = companyBean.getKeyRatiosBeanList();
+            if(keyRatiosBeanList.size() == 0 || keyRatiosBeanList.get(0).getDate().after(fromDate))
+                return -1;
+            Date lastBeanDate = keyRatiosBeanList.get(0).getDate();
+            for(int i = 1; i < keyRatiosBeanList.size();i++){
+                KeyRatiosBean keyRatiosBean = keyRatiosBeanList.get(i);
+                if(!areOneYearApart(keyRatiosBean.getDate(),lastBeanDate))
+                    lastBeanDate = keyRatiosBean.getDate();
+                if(keyRatiosBean.getDate().after(fromDate))
+                    break;
+                numberOfYearsOfDataAvailable++;
+            }
+        }
+        if(consideringBeansMode==3){
+            List<QuarterlyResultsBean> quarterlyResultsBeanList = companyBean.getQuarterlyResultsBeanList();
+            if(quarterlyResultsBeanList.size() == 0 || quarterlyResultsBeanList.get(0).getDate().after(fromDate))
+                return -1;
+            Date lastBeanDate = quarterlyResultsBeanList.get(0).getDate();
+            for(int i = 1; i< quarterlyResultsBeanList.size(); i+=4){
+                QuarterlyResultsBean quarterlyResultsBean = quarterlyResultsBeanList.get(i);
+                if(!areQuarterApart(quarterlyResultsBean.getDate(), lastBeanDate))
+                    lastBeanDate = quarterlyResultsBean.getDate();
+                if(quarterlyResultsBean.getDate().after(fromDate))
+                    break;
+                numberOfYearsOfDataAvailable++;
+            }
+        }
+        return numberOfYearsOfDataAvailable+1;
+    }
+
+    public static boolean areOneYearApart(Date date1, Date date2){
+        if(date1.getYear() - date2.getYear() == 1 || date1.getYear() - date2.getYear() == -1)
+            return true;
+        else
+            return false;
+    }
+
+    public static boolean areQuarterApart(Date date1, Date date2){
+        if(date1.getMonth() - date2.getMonth() == 3 || date1.getMonth() - date2.getMonth() == -3)
+            return true;
+        else
+            return false;
+    }
 }

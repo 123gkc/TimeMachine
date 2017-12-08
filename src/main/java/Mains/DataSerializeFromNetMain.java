@@ -24,7 +24,7 @@ public class DataSerializeFromNetMain {
         List<CompanyBean> companyBeanList = (CompanyObjectListBuilder.buildCompanyObjectList(companyUrlsQueue));
 
         for(CompanyBean companyBean : companyBeanList){
-            FileOutputStream fileOutputStream = new FileOutputStream("/Users/krishna.go/myProjects/TimeMachineData/testingObjectCreation/"+companyBean.getCompnayName()+".ser");
+            FileOutputStream fileOutputStream = new FileOutputStream("/Users/krishna.go/myProjects/TimeMachineData/testingObjectCreation/"+companyBean.getCompanyName()+".ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOutputStream);
 
             out.writeObject(companyBean);
